@@ -43,7 +43,7 @@ def predict(uploaded_file):
     st.write(prediction)
     # computing category weither a shape is a rectangle, square, star or triangle
     if prediction[0][0] > prediction[0][1] + prediction[0][2] + prediction[0][3]:
-        st.write(f'Shape is predicted as a Cirle with {"%.1f" % ((prediction[0][0])*100)}% certainty')
+        st.write(f'Shape is predicted as a Circle with {"%.1f" % ((prediction[0][0])*100)}% certainty')
     elif prediction[0][1] > prediction[0][0] + prediction[0][2] + prediction[0][3]:
         st.write(f'Shape is predicted as a Square with {"%.1f" % ((prediction[0][1])*100)}% certainty')
     elif prediction[0][2] > prediction[0][0] + prediction[0][1] + prediction[0][3]:
@@ -57,19 +57,22 @@ def predict(uploaded_file):
 st.title('Shapes - Image Classification w/ CNN')
 st.text('Using Streamlit v0.53.0')
 # making Sidebar for navigation and options
-activities = ['About','EDA','Model']
-choice = st.sidebar.selectbox('Select SideBar Activities', activities)
+activities = ['Mission Statement','EDA','Model','Predictor']
+choice = st.sidebar.selectbox('SideBar Navigation', activities)
                  
 # Sidebar content for About
-if choice == 'About':
+if choice == 'Mission Statement':
     st.subheader('Mission Statement')
-    st.text('I wanted to make a image classifier using a convolutional neural network model. \nConvolutional neural networks is one of the princable “deep learning” models that \nworks great with images and videos. \n')
+    st.text('I wanted to make a image classifier using a Convolutional Neural Network model. \nConvolutional Neural Networks are one of the princable “deep learning” models that \nworks amazingly with images and videos. \n')
     st.text('\n')
     st.text('\n')  
-    st.text('I wanted to make a model and have a system where I can feed a image, I will be taken \nlive and, hopefully predict the correct class(Shape). \n')
-    img = Image.open('images_for_presentation/shapesorting7square.jpg')
-    st.image(img, caption="I'm basically doing a coding version of this kids toy",width=300)
-    st.text('') 
+    st.text('I wanted to make a model and have a system where I can feed an image of a shape, I \nwill be taking live and, hopefully predict the correct Shape (class). \n')
+    # simple images to convey 'shape sorting'
+    img01 = Image.open('images_for_presentation/shapesorting7square.jpg')
+    img02 = Image.open('images_for_presentation/wooden-baby-shape-puzzle-toy.jpg')
+
+    st.image([img01,img02],width=300)
+    st.text(" I'm basically doing a pythonic coding version of this children's game.") 
     st.text('')
 
                  
@@ -80,7 +83,7 @@ elif choice == 'EDA':
     st.text('The first dataset had images with dimensions of 100x100 pixel and the images \nare labeled in 3 folders.')
     st.text('The second dataset had images with dimensions of 28x28 pixel and the images are \nlabeled in 3 folders.')
     st.text('Lastly I manually gathered the remaining images for stars. I also had to crop out \nthe outlines images of stars.')
-
+    st.text('\n')
     st.text('After splitting the dataset(4,438 total images) into Train/Test(90/10 split) of each shape')
 
     
@@ -89,7 +92,7 @@ elif choice == 'EDA':
     st.text('\n')
     st.text('\n')
     st.text('Sample preview of Circle dataset.')
-    img = Image.open('collages/EDA_circles.jpg')
+    img = Image.open('collages/EDA_circles.png')
     st.image(img, caption='Total images of circles: 1107',width=300)
     st.text('# of images in circle training set: 996')
     st.text('# of images in circle test set: 111')
@@ -98,7 +101,7 @@ elif choice == 'EDA':
     st.text('\n')
     st.text('\n')
     st.text('Sample preview of Squares dataset.')
-    img = Image.open('collages/EDA_squares.jpg')
+    img = Image.open('collages/EDA_squares.png')
     st.image(img, caption='Total images of squares: 1115',width=300)
     st.text('# of images in square training set: 1004') 
     st.text('# of images in square test set: 111')
@@ -107,7 +110,7 @@ elif choice == 'EDA':
     st.text('\n')
     st.text('\n')
     st.text('Sample preview of Triangles dataset.')
-    img = Image.open('collages/EDA_triangles.jpg')
+    img = Image.open('collages/EDA_triangles.png')
     st.image(img, caption='Total images of triangles: 1110',width=300)
     st.text('# of images in triangle training set: 999')
     st.text('# of images in triangle test set: 111')
@@ -123,11 +126,21 @@ elif choice == 'EDA':
 
 # Sidebar content for Model
 elif choice == 'Model':
-    #loading trained model for predicting
-    model = tf.keras.models.load_model('models/MAIN-STARS_model_50_epochs_with_rescaler_zoom-0.2_rotation-45_skew-0.02_flip-hori_verti-02-main.h5')
+
+    st.subheader('')                
+                 
+# Sidebar content for Predictor
+elif choice == 'Predictor':
 
     st.subheader('Convolutional Neural Network - Realtime Predictor')
     
+#Main Model = ('models/Final-MAIN-STARS_model_50_epochs_with_rescaler_zoom-0.2_rotation-45_skew-0.05_flip-hori_verti-02-main.h5') #Secondary Model = ('models/1-MAIN-STARS_model_50_epochs_with_rescaler_zoom-0.2_rotation-45_skew-0.03_flip-hori_verti-main.h5')   
+#No-Stars Model = ('models/NO-STARS_model_with_rescaler_zoom-0.2_rotation-45_skew-0.05_flip-hori_verti-01.h5')
+                 
+                 
+    #loading trained model for predicting
+    model = tf.keras.models.load_model('models/Final-MAIN-STARS_model_50_epochs_with_rescaler_zoom-0.2_rotation-45_skew-0.05_flip-hori_verti-02-main.h5')
+                 
     uploaded_file = st.file_uploader('Choose an image of a shape to classify...', type= ['png','jpg'])
     if uploaded_file is not None:
         
@@ -137,7 +150,7 @@ elif choice == 'Model':
         
         st.image(im, caption='Uploaded Image.',width=200, use_column_width=False)
         st.write("")
-        st.write("Classifying at")
+        st.write("Classifying at:")
         predict(uploaded_file)
 
     
@@ -148,11 +161,8 @@ elif choice == 'Model':
 
 
 
+"""
 
-
-# """
-# ## My first app
-# Here's the total number of images per folder:
-# """
-
-# the_image = st.image_input(
+##### Flatiron Final Project
+- ###### Made by: Samuel Diaz
+"""
