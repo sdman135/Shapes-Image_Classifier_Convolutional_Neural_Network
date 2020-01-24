@@ -8,11 +8,12 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# image processing imports
+#image processing imports
 import tensorflow as tf
+#for converting image into array
 from tensorflow.keras.preprocessing import image
 
-# model imports
+#imports for model
 import keras
 from keras.models import load_model
 from tensorflow.keras.models import Sequential
@@ -23,8 +24,8 @@ from PIL import Image
 
 
 
-
-# function to predict image
+################
+#function to predict image
 def predict(uploaded_file): 
     #loading image from the path of image
     im = Image.open(uploaded_file)
@@ -40,7 +41,9 @@ def predict(uploaded_file):
     #running image through the model to predict class
     prediction = model.predict(im)
     #showing prediction chart with percentage of each class
+    st.write("\n")
     st.write(prediction)
+    st.write("\n")
     # computing category weither a shape is a rectangle, square, star or triangle
     if prediction[0][0] > prediction[0][1] + prediction[0][2] + prediction[0][3]:
         st.write(f'Shape is predicted as a Circle with {"%.1f" % ((prediction[0][0])*100)}% certainty')
@@ -51,13 +54,13 @@ def predict(uploaded_file):
     elif prediction[0][3] > prediction[0][0] + prediction[0][1] + prediction[0][2]:
         st.write(f'Shape is predicted as a Triangle with {"%.1f" % ((prediction[0][3])*100)}% certainty')
 
-
-# In[ ]:
+######################
+# In[2]:
 
 st.title('Shapes - Image Classification w/ CNN')
 st.text('Using Streamlit v0.53.0')
 # making Sidebar for navigation and options
-activities = ['Mission Statement','EDA','Model','Predictor']
+activities = ['Mission Statement','EDA','Predictor','About']
 choice = st.sidebar.selectbox('SideBar Navigation', activities)
                  
 # Sidebar content for About
@@ -68,8 +71,8 @@ if choice == 'Mission Statement':
     st.text('\n')  
     st.text('I wanted to make a model and have a system where I can feed an image of a shape, I \nwill be taking live and, hopefully predict the correct Shape (class). \n')
     # simple images to convey 'shape sorting'
-    img01 = Image.open('images_for_presentation/shapesorting7square.jpg')
-    img02 = Image.open('images_for_presentation/wooden-baby-shape-puzzle-toy.jpg')
+    img01 = Image.open('images_for_presentation/shapesorting.jpg')
+    img02 = Image.open('images_for_presentation/wooden-baby-shape-puzzle-toy.png')
 
     st.image([img01,img02],width=300)
     st.text(" I'm basically doing a pythonic coding version of this children's game.") 
@@ -124,11 +127,7 @@ elif choice == 'EDA':
     st.text('# of images in stars training set: 1002')
     st.text('# of images in stars test set: 112')
 
-# Sidebar content for Model
-elif choice == 'Model':
 
-    st.subheader('')                
-                 
 # Sidebar content for Predictor
 elif choice == 'Predictor':
 
@@ -140,27 +139,26 @@ elif choice == 'Predictor':
                  
     #loading trained model for predicting
     model = tf.keras.models.load_model('models/Final-MAIN-STARS_model_50_epochs_with_rescaler_zoom-0.2_rotation-45_skew-0.05_flip-hori_verti-02-main.h5')
-                 
+    #setup for drag and drop to run prediction model
     uploaded_file = st.file_uploader('Choose an image of a shape to classify...', type= ['png','jpg'])
     if uploaded_file is not None:
-        
-        im = Image.open(uploaded_file)
-#         im = tf.keras.preprocessing.image.reshape((image,64,64,3))
-        
-        
+        #load image file
+        im = Image.open(uploaded_file)        
+        #display image and caption
         st.image(im, caption='Uploaded Image.',width=200, use_column_width=False)
         st.write("")
         st.write("Classifying at:")
+        st.write("\n")
+        #run inputted image through model
         predict(uploaded_file)
 
-    
+# Sidebar content for About
+elif choice == 'About':
 
-
-
-
-
-
-
+    st.subheader('About the Model')
+    st.write("")
+    st.write("")
+                    
 """
 
 ##### Flatiron Final Project
