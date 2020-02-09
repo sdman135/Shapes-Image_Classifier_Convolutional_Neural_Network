@@ -34,27 +34,27 @@ I also made a front-end drag and drop predictor app. The app will pass the hand 
 
       I made a few collages (in photoshop) of a sampling of images, by their labels
 
-![](readme_images/collage01.png)
+      ![](readme_images/collage01.png)
 
-![](readme_images/collage02.png)
+      ![](readme_images/collage02.png)
 
 * Built and tweaked my Neural Network.
 
 * I then tuned my ImageDataGenerator, which allowed me to manipulate images to produce variations of an original image. This helped increase your data pool with the augmented version of original images.
 
       Samples of the ImageDataGenerator in action:
-      ![](readme_images/ImageDataGenerator_example.png)   
+    ![](readme_images/ImageDataGenerator_example.png)   
 
 
 * After training my model through 50 epochs and I calculated the average of the last ten epochs' of accuracy score (97.11%), average loss (0.084) and the average MSE (0.010). My model is performing very well as I have the classification report and the confusion matrix of my model's predictions
 
       Classification Report of model's performance:
 
-      ![](readme_images/classification_report.png)
+    ![](readme_images/classification_report.png)
 
       Confusion Matrix of model's performance:
 
-      ![](readme_images/confusion_matrix.png)
+    ![](readme_images/confusion_matrix.png)
 
       Only 2 out of 448 possible outcomes were incorrectly classified (99.55% "accurate")
 
@@ -62,7 +62,7 @@ I also made a front-end drag and drop predictor app. The app will pass the hand 
 
       Click image to see demo
 
-      [![Alt text](https://i9.ytimg.com/vi/Y-tON5nfNnA/mq1.jpg?sqp=CK74_vEF&rs=AOn4CLBW9KAQTJ_HbthQ4yW1FTmo89FK2g)](https://www.youtube.com/watch?v=Y-tON5nfNnA&feature=emb_title)
+    [![Alt text](https://i9.ytimg.com/vi/Y-tON5nfNnA/mq1.jpg?sqp=CK74_vEF&rs=AOn4CLBW9KAQTJ_HbthQ4yW1FTmo89FK2g)](https://www.youtube.com/watch?v=Y-tON5nfNnA&feature=emb_title)
 
       Just need to drag image of hand drawn shape into predictor. The app is running my model in the background and will display the percentage the model thinks the shape is, whether a Circle, Square, Star or Triangle.
 
