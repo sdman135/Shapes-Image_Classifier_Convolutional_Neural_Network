@@ -62,7 +62,7 @@ I also made a front-end drag and drop predictor app. The app will pass the hand 
 
       Click image to see a video demoing my drag and drop predictor
 
-[![Alt text](readme_images/streamlit_demo_thumbnail.png)](https://www.youtube.com/watch?v=Y-tON5nfNnA&feature=emb_title)
+[![Alt text](readme_images/streamlit_demo_image.png)](https://www.youtube.com/watch?v=Y-tON5nfNnA&feature=emb_title)
 
       Just need to drag image of hand drawn shape into predictor and it will display the
       percentage the model thinks the shape is, whether a Circle, Square, Star or Triangle.
