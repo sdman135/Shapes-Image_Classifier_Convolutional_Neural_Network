@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Shapes Image Classification - Using Convolutional Neural Networks
 
 
@@ -66,3 +67,7 @@ Confusion Matrix of model's performance
 ## Authors
 
 * **Samuel Diaz** - *Creator* - [sdman135](https://github.com/sdman135/)
+=======
+# Shapes_Convolutional_Neural_Network
+I made a Convolutional Neural Network classifier of 4 shapes(Circles, Squares, Stars or Triangles) to predict a hand drawn shape if it is one of the said shapes. 
+>>>>>>> cc6ddfc278a17b3bd06a593cc3ed74ab62b58c7c
