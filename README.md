@@ -53,6 +53,7 @@ Confusion Matrix of model's performance:
 
 ![](readme_images/confusion_matrix.png)
 
+Only 2 out of 448 possible outcomes were incorrectly classified (99.55% "accurate")
 
 * Finally I made a Streamlit (front-end) to live demo my model:
 
@@ -60,6 +61,7 @@ Click image to see demo
 
 [![Alt text](https://i9.ytimg.com/vi/Y-tON5nfNnA/mq1.jpg?sqp=CK74_vEF&rs=AOn4CLBW9KAQTJ_HbthQ4yW1FTmo89FK2g)](https://www.youtube.com/watch?v=Y-tON5nfNnA&feature=emb_title)
 
+Just need to drag image of hand drawn shape into predictor. The app is running my model in the background and will display the percentage the model thinks the shape is, whether a Circle, Square, Star or Triangle.
 
 
 
