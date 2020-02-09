@@ -24,12 +24,12 @@ All of the images in my dataset is in .png format.
 
 After splitting the dataset (4,480 total images) into Train/Test( 90/10 split ) of each shape:
 
-Total number of images in circles training set: 1013   --   Total number of images in circles test set:      114
-Total number of images in squares training set: 1013   --   Total number of images in squares test set:      113
-Total number of images in stars training set: 1002   --   Total number of images in stars test set:      112
-Total number of images in triangles training set: 1008   --   Total number of images in triangles test set:      113
+Total images in circles training set: 1013   --   Total images in circles test set: 114
+Total images in squares training set: 1013   --   Total images in squares test set: 113
+Total images in stars training set: 1002   --   Total  images in stars test set: 112
+Total images in triangles training set: 1008   --   Total images in triangles test set: 113
 
-I made a collage, in photoshop, of a sampling of images of each shape, by their Label
+I made a collage, in photoshop, of a sampling of images, by their Label
 
 ![](readme_images/collage01.png)
 
