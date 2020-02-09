@@ -20,16 +20,19 @@ I also made a front-end drag and drop predictor app. The app will pass the hand 
 
 * Did some basic Exploratory Data Analysis:
 
-All of the images in my dataset is in .png format.
+    All of the images in my dataset is in .png format.
 
-After splitting the dataset (4,480 total images) into Train/Test( 90/10 split ) of each shape:
+    After splitting the dataset (4,480 total images) into Train/Test( 90/10 split ) of each shape:
 
-Total images in circles training set: 1013   --   Total images in circles test set: 114
-Total images in squares training set: 1013   --   Total images in squares test set: 113
-Total images in stars training set: 1002   --   Total  images in stars test set: 112
-Total images in triangles training set: 1008   --   Total images in triangles test set: 113
+    Total images in circles training set: 1013   --   Total images in circles test set: 114
 
-I made a few collages (in photoshop) of a sampling of images, by their labels
+    Total images in squares training set: 1013   --   Total images in squares test set: 113
+
+    Total images in stars training set: 1002   --   Total  images in stars test set: 112
+    
+    Total images in triangles training set: 1008   --   Total images in triangles test set: 113
+
+    I made a few collages (in photoshop) of a sampling of images, by their labels
 
 ![](readme_images/collage01.png)
 
