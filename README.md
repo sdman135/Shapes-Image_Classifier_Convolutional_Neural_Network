@@ -60,7 +60,7 @@ I also made a front-end drag and drop predictor app. The app will pass the hand 
 
 * Finally I made a Streamlit app(front-end) to live demo my model:
 
-      Click image to see demo
+      Click image to see a video demoing my drag and drop predictor
 
     [![Alt text](https://i9.ytimg.com/vi/Y-tON5nfNnA/mq1.jpg?sqp=CK74_vEF&rs=AOn4CLBW9KAQTJ_HbthQ4yW1FTmo89FK2g)](https://www.youtube.com/watch?v=Y-tON5nfNnA&feature=emb_title)
 
