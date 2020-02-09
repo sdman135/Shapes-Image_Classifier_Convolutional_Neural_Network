@@ -51,7 +51,7 @@ Classification Report of model's performance:
 
 Confusion Matrix of model's performance:
 
-[](readme_images/confusion_matrix.png)
+![](readme_images/confusion_matrix.png)
 
 
 * Finally I made a Streamlit (front-end) to live demo my model:
@@ -71,7 +71,7 @@ Click image to see demo
 
 * Python3.8
 * Jupyter Notebook 6.0.0
-* A few imports: pandas, numpy, matplotlib.pyplot, seaborn, statsmodels and sklearn
+* A few imports: pandas, numpy, tensorflow, keras, Pil and sklearn
 
 
 ## Authors
