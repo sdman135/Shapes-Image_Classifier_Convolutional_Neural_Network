@@ -40,8 +40,8 @@ I made a collage, in photoshop, of a sampling of images of each shape, by their 
 * I then tuned my ImageDataGenerator, which allowed me to manipulate images to produce variations of an original image. This helped increase your data pool with the augmented version of original images.
 
 Samples of the ImageDataGenerator in action:
-![](ignore_files/images_for_presentation/ImageDataGenerator_example-star_of_david.png)   
-![](ignore_files/images_for_presentation/ImageDataGenerator_example-star.png)
+![](readme_images/ImageDataGenerator_example.png)   
+
 
 * After training my model through 50 epochs and I calculated the average of the last ten epochs' of accuracy score (97.11%), average loss (0.084) and the average MSE (0.010). My model is performing very well as I have the classification report and the confusion matrix of my model's predictions
 
