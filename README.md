@@ -6,11 +6,11 @@
 
 Flatiron Final Project - Shapes Image Classifier CNN
 
-I wanted to make a image classifier using a convolutional neural network model. As well make system where I can feed a image and predict the correct class. Convolutional neural networks are one of many “deep learning” models; that works great with images and videos processing.
+I wanted to make a image classifier using a convolutional neural network model. As well make system where I can feed a image and predict the correct class. Convolutional neural networks are one of many “deep learning” models; that just so happens works great with images and videos processing.
 
 I made a Convolutional Neural Network to predict; a hand drawn shape, and classify if the image is one of four shapes (Circles, Squares, Stars or Triangles).
 
-I also made a drag and drop predictor. The app is running my model and will display the percentage the model thinks the shape is, Circle, Square, Star or Triangle.
+I also made a front-end drag and drop predictor. The app feeds an image through model and will display the percentage the model thinks the shape is, Circle, Square, Star or Triangle.
 
 ## What Did I Do?
 
@@ -55,7 +55,7 @@ Confusion Matrix of model's performance:
 
 Only 2 out of 448 possible outcomes were incorrectly classified (99.55% "accurate")
 
-* Finally I made a Streamlit (front-end) to live demo my model:
+* Finally I made a Streamlit app(front-end) to live demo my model:
 
 Click image to see demo
 
