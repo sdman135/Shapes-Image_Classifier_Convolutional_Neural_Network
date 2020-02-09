@@ -20,15 +20,16 @@ I also made a drag and drop predictor. The app is running my model and will disp
 
 * Did some basic Exploratory Data Analysis:
 
-    All of the images in my dataset is in .png format.
-    After splitting the dataset (4,480 total images) into Train/Test( 90/10 split ) of each shape:
+All of the images in my dataset is in .png format.
 
-    Total number of images in circles training set: 1013   --   Total number of images in circles test set:      114
-    Total number of images in squares training set: 1013   --   Total number of images in squares test set:      113
-    Total number of images in stars training set: 1002   --   Total number of images in stars test set:      112
-    Total number of images in triangles training set: 1008   --   Total number of images in triangles test set:      113
+After splitting the dataset (4,480 total images) into Train/Test( 90/10 split ) of each shape:
 
-    I made a collage, in photoshop, of a sampling of images of each shape, by their Label
+Total number of images in circles training set: 1013   --   Total number of images in circles test set:      114
+Total number of images in squares training set: 1013   --   Total number of images in squares test set:      113
+Total number of images in stars training set: 1002   --   Total number of images in stars test set:      112
+Total number of images in triangles training set: 1008   --   Total number of images in triangles test set:      113
+
+I made a collage, in photoshop, of a sampling of images of each shape, by their Label
 
 ![](ignore_files/images_for_presentation/collages/collage01.png)
 
