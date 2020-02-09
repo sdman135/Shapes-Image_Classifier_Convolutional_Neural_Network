@@ -51,6 +51,8 @@ Confusion Matrix of model's performance
 [](readme_images/confusion_matrix.png)
 
 * Finally I made a Streamlit (front-end) to live demo my model  
+[![Alt text](https://i9.ytimg.com/vi/Y-tON5nfNnA/mq1.jpg?sqp=CK74_vEF&rs=AOn4CLBW9KAQTJ_HbthQ4yW1FTmo89FK2g)](https://www.youtube.com/watch?v=Y-tON5nfNnA&feature=emb_title)
+Click image to see demo
 ![](readme_images/Screen Recording 2020-02-03 at 3.53.23 PM.mov)
 
 
