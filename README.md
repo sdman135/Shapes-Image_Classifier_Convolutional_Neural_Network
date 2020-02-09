@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Shapes Image Classification - Using Convolutional Neural Networks
 
 
@@ -31,16 +30,17 @@ I also made a drag and drop predictor. The app is running my model and will disp
 
     I made a collage, in photoshop, of a sampling of images of each shape, by their Label
 
-![](collages/EDA_circles.png)  ![](collages/EDA_squares.png)
+![](collages/collage01.png)
 
-![](collages/EDA_stars.png)  ![](collages/EDA_triangles.png)
+![](collages/collage02.png)
 
 * Made the Neural Network.
 
 * I then tuned my ImageDataGenerator, which allowed me to manipulate images to produce variations of an original image. This helped increase your data pool with the augmented version of original images.
 
-![](ignore_files/images_for_presentation/ImageDataGenerator_example-star_of_david.png)   ![](ignore_files/images_for_presentation/ImageDataGenerator_example-star.png)
-    Samples of the ImageDataGenerator in action.
+Samples of the ImageDataGenerator in action:
+![](ignore_files/images_for_presentation/ImageDataGenerator_example-star_of_david.png)   
+![](ignore_files/images_for_presentation/ImageDataGenerator_example-star.png)
 
 * After training my model through 50 epochs and I calculated the average of the last ten epochs' of accuracy score (97.11%), average loss (0.084) and the average MSE (0.010). My model is performing very well as I have the classification report and the confusion matrix of my model's predictions
 
@@ -67,7 +67,3 @@ Confusion Matrix of model's performance
 ## Authors
 
 * **Samuel Diaz** - *Creator* - [sdman135](https://github.com/sdman135/)
-=======
-# Shapes_Convolutional_Neural_Network
-I made a Convolutional Neural Network classifier of 4 shapes(Circles, Squares, Stars or Triangles) to predict a hand drawn shape if it is one of the said shapes. 
->>>>>>> cc6ddfc278a17b3bd06a593cc3ed74ab62b58c7c
