@@ -40,19 +40,19 @@ def predict(uploaded_file):
     im = tf.keras.applications.inception_v3.preprocess_input(im)
     #running image through the model to predict class
     prediction = model.predict(im)
-    #showing prediction chart with percentage of each class
     st.write("\n")
-    st.write(prediction)
+    #showing prediction chart with percentage of each class
+    st.write(pd.DataFrame(prediction, columns = ['Circle','Square','Star','Triangle'], index = ['Probability']))
     st.write("\n")
     # computing category weither a shape is a rectangle, square, star or triangle
     if prediction[0][0] > prediction[0][1] + prediction[0][2] + prediction[0][3]:
-        st.write(f'Shape is predicted as a Circle with {"%.1f" % ((prediction[0][0])*100)}% certainty')
+        st.write(f'Shape is predicted as a Circle with {"%.2f" % ((prediction[0][0])*100)}% certainty')
     elif prediction[0][1] > prediction[0][0] + prediction[0][2] + prediction[0][3]:
-        st.write(f'Shape is predicted as a Square with {"%.1f" % ((prediction[0][1])*100)}% certainty')
+        st.write(f'Shape is predicted as a Square with {"%.2f" % ((prediction[0][1])*100)}% certainty')
     elif prediction[0][2] > prediction[0][0] + prediction[0][1] + prediction[0][3]:
-        st.write(f'Shape is predicted as a Star with {"%.1f" % ((prediction[0][2])*100)}% certainty')
+        st.write(f'Shape is predicted as a Star with {"%.2f" % ((prediction[0][2])*100)}% certainty')
     elif prediction[0][3] > prediction[0][0] + prediction[0][1] + prediction[0][2]:
-        st.write(f'Shape is predicted as a Triangle with {"%.1f" % ((prediction[0][3])*100)}% certainty')
+        st.write(f'Shape is predicted as a Triangle with {"%.2f" % ((prediction[0][3])*100)}% certainty')
 
 ######################
 # In[2]:
@@ -71,8 +71,8 @@ if choice == 'Mission Statement':
     st.text('\n')  
     st.text('I wanted to make a model and have a system where I can feed an image of a shape, I \nwill be taking live and, hopefully predict the correct Shape (class). \n')
     # simple images to convey 'shape sorting'
-    img01 = Image.open('images_for_presentation/shapesorting.jpg')
-    img02 = Image.open('images_for_presentation/wooden-baby-shape-puzzle-toy.png')
+    img01 = Image.open('ignore_files/images_for_presentation/shapesorting.jpg')
+    img02 = Image.open('ignore_files/images_for_presentation/wooden-baby-shape-puzzle-toy.png')
 
     st.image([img01,img02],width=300)
     st.text(" I'm basically doing a pythonic coding version of this children's game.") 
