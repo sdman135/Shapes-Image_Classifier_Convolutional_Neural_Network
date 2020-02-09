@@ -45,9 +45,12 @@ Samples of the ImageDataGenerator in action:
 
 * After training my model through 50 epochs and I calculated the average of the last ten epochs' of accuracy score (97.11%), average loss (0.084) and the average MSE (0.010). My model is performing very well as I have the classification report and the confusion matrix of my model's predictions
 
-Classification Report of model's performance
-![](readme_images/Screen Shot 2020-01-22 at 6.30.09 PM.png)
-Confusion Matrix of model's performance
+Classification Report of model's performance:
+
+![](readme_images/classification_report.png)
+
+Confusion Matrix of model's performance:
+
 [](readme_images/confusion_matrix.png)
 
 
