@@ -10,7 +10,7 @@ I wanted to make a image classifier using a convolutional neural network model. 
 
 I made a Convolutional Neural Network to predict; a hand drawn shape, and classify if the image is one of four shapes (Circles, Squares, Stars or Triangles).
 
-I also made a front-end drag and drop predictor. The app feeds an image through model and will display the percentage the model thinks the shape is, Circle, Square, Star or Triangle.
+I also made a front-end drag and drop predictor app. The app will pass the hand drawn image through my model and will display the percentage the model thinks the shape is, Circle, Square, Star or Triangle.
 
 ## What Did I Do?
 
@@ -29,13 +29,13 @@ Total images in squares training set: 1013   --   Total images in squares test s
 Total images in stars training set: 1002   --   Total  images in stars test set: 112
 Total images in triangles training set: 1008   --   Total images in triangles test set: 113
 
-I made a collage, in photoshop, of a sampling of images, by their Label
+I made a few collages (in photoshop) of a sampling of images, by their labels
 
 ![](readme_images/collage01.png)
 
 ![](readme_images/collage02.png)
 
-* Made the Neural Network.
+* Built and tweaked my Neural Network.
 
 * I then tuned my ImageDataGenerator, which allowed me to manipulate images to produce variations of an original image. This helped increase your data pool with the augmented version of original images.
 
