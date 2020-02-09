@@ -31,9 +31,9 @@ Total number of images in triangles training set: 1008   --   Total number of im
 
 I made a collage, in photoshop, of a sampling of images of each shape, by their Label
 
-![](ignore_files/images_for_presentation/collage01.png)
+![](readme_images/collage01.png)
 
-![](ignore_files/images_for_presentation/collage02.png)
+![](readme_images/collage02.png)
 
 * Made the Neural Network.
 
@@ -46,12 +46,12 @@ Samples of the ImageDataGenerator in action:
 * After training my model through 50 epochs and I calculated the average of the last ten epochs' of accuracy score (97.11%), average loss (0.084) and the average MSE (0.010). My model is performing very well as I have the classification report and the confusion matrix of my model's predictions
 
 Classification Report of model's performance
-![](ignore_files/images_for_presentation/Screen Shot 2020-01-22 at 6.30.09 PM.png)
+![](readme_images/Screen Shot 2020-01-22 at 6.30.09 PM.png)
 Confusion Matrix of model's performance
-[](ignore_files/images_for_presentation/confusion_matrix.png)
+[](readme_images/confusion_matrix.png)
 
 * Finally I made a Streamlit (front-end) to live demo my model  
-![](ignore_files/images_for_presentation/Screen Recording 2020-02-03 at 3.53.23 PM.mov)
+![](readme_images/Screen Recording 2020-02-03 at 3.53.23 PM.mov)
 
 
 
