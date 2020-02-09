@@ -30,9 +30,9 @@ I also made a drag and drop predictor. The app is running my model and will disp
 
     I made a collage, in photoshop, of a sampling of images of each shape, by their Label
 
-![](collages/collage01.png)
+![](ignore_files/images_for_presentation/collages/collage01.png)
 
-![](collages/collage02.png)
+![](ignore_files/images_for_presentation/collages/collage02.png)
 
 * Made the Neural Network.
 
