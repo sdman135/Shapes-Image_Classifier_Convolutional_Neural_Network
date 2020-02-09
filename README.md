@@ -51,7 +51,7 @@ Classification Report of model's performance:
 
 Confusion Matrix of model's performance:
 
-[](readme_images/confusion_matrix)
+[](readme_images/confusion_matrix.png)
 
 
 * Finally I made a Streamlit (front-end) to live demo my model:
