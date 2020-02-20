@@ -119,6 +119,6 @@ Thumbs.db
 # config file
 config.py
 # Custom folder to ignore file in
-/ignore_files/
-/readme_images/
-/models/
+/ignore_files/**
+/readme_images/**
+/models/**
