@@ -120,7 +120,7 @@ Thumbs.db
 config.py
 # Custom folder to ignore file in
 ignore_files/
-readme_images/
+images_to_predict/
 models/
 shapes/
 borders/
