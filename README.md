@@ -69,7 +69,9 @@ I also made a front-end drag and drop predictor app. The app will pass the hand 
 
 
 
+Hope You enjoyed my Shapes CNN Classifier Project
 
+Add me on LinkedIn if you liked.
 
 
 
@@ -80,6 +82,6 @@ I also made a front-end drag and drop predictor app. The app will pass the hand 
 * A few imports: pandas, numpy, tensorflow, keras, Pil, sklearn and streamlit
 
 
-## Authors
+## Author
 
-* **Samuel Diaz** - *Creator* - [sdman135](https://github.com/sdman135/)
+* **Samuel Diaz** - *Creator* - [sdman135](https://github.com/sdman135/) - [LinkedIn](https://www.linkedin.com/in/samuel-diaz-data-scientist)
