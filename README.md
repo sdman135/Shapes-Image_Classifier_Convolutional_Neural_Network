@@ -77,7 +77,7 @@ I also made a front-end drag and drop predictor app. The app will pass the hand 
 
 * Python3.8
 * Jupyter Notebook 6.0.0
-* A few imports: pandas, numpy, tensorflow, keras, Pil and sklearn
+* A few imports: pandas, numpy, tensorflow, keras, Pil, sklearn and streamlit
 
 
 ## Authors
