@@ -77,7 +77,7 @@ Add me on LinkedIn if you liked.
 
 ## Built With
 
-* Python3.8
+* Python 3.8
 * Jupyter Notebook 6.0.0
 * A few imports: pandas, numpy, tensorflow, keras, Pil, sklearn and streamlit
 
